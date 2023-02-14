@@ -5,7 +5,7 @@ public class lf01 {
             System.out.println(number + "は５未満です");
         }
         if (number < 10) {
-            System.out.pritln(number + "は１０未満です");
+            System.out.println(number + "は１０未満です");
         }
         if (number < 15) {
             System.out.println(number + "は１５未満です");
