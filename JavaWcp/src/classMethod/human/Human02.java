@@ -12,5 +12,6 @@ public class Human02 {
 	public Human02(String name, int age) {
 		this.name = name;
 		this.age = age;
+		
 	}
 }
