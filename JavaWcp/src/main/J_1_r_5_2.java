@@ -13,7 +13,6 @@ public class J_1_r_5_2 {
 		System.out.println(address + "に、以下のメールを送信します");
 		System.out.println("件名：" + title);
 		System.out.println("本文：" + text);
-		
 	}
 
 }
