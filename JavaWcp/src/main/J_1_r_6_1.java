@@ -8,6 +8,7 @@ public class J_1_r_6_1 {
 		Zenhan.doTogame();
 		main.comment.Kouhan.callDeae();
 		main.comment.Kouhan.showMondokoro();
+		
 	}
 
 }
