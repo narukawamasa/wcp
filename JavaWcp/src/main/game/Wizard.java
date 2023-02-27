@@ -10,8 +10,8 @@ public class Wizard {
 		int basePoint = 10;
 		int recovPoint = (int) (basePoint * this.getWand().getPower());
 		
-		h.setHp(h.getHp() + recovPoint);
-		System.out.println(h.getName() + "のHPを" + recovPoint + "回復した！");
+//		h.setHp(h.getHp() + recovPoint);
+//		System.out.println(h.getName() + "のHPを" + recovPoint + "回復した！");
 	}
 	
 	public int getHp() {return this.hp;}
