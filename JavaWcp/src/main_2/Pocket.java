@@ -1,6 +1,6 @@
 package main_2;
 
-public class J_1_2_2 {
+public class Pocket {
 	
 	private Object data;
 	public void put(Object d) {
