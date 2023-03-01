@@ -1,17 +1,21 @@
 package main_2;
 
 public class Outer {
-	int outerField;
-	static int outerStaticField;
+	int outerMember = 2;
 	
-	static class Inner {
-		void innerMethod() {
-			outerStaticField = 10;
+	void outerMethod() {
+		int a = 10;
+	
+	class Inner {
+		public void innerMethod() {
+			System.out.println("innerMethodです");
+			System.out.println(outerMember + a);
 		}
 	}
 	
-	void outerMethod() {
-		Inner ic = new Inner();
+	Inner ic = new Inner();
+	ic.innerMethod();
+    
 	}
 
 }
