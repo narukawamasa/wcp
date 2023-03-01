@@ -1,14 +1,13 @@
 package main_2;
 
-public class Pocket {
-	
-	private Object data;
-	public void put(Object d) {
+public class Pocket<E> {
+	private E data;
+	public void put(E d) {
 		this.data = d;
 	}
-	public Object get() {
+	public E get() {
 		return this.data;
-		
 	}
+	
 
 }
