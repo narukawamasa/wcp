@@ -1,6 +1,7 @@
 package main_2;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class J_1_3_6 {
 	public static void main(String[] args) {
@@ -8,12 +9,12 @@ public class J_1_3_6 {
 		
 		boolean anyoneKnockedOut = false;
 		
-		for (Hero h : heroes) {
-			if (h,hp == 0) {
-				anyoneKnockedOut = true;
-				break;
-			}
-		}
+//		for (Hero h : heroes) {
+//			if (h,hp == 0) {
+//				anyoneKnockedOut = true;
+//				break;
+//			}
+//		}
 	}
 
 }
