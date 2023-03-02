@@ -1,15 +1,16 @@
 package main_2.j_3_r;
 
-import java.util.function.IntPredicate;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
-		IntPredicate f1 = x -> x % 2 == 1;
-		Func2 f2 = (point, name) -> {
-			return name + "さんは" + (point > 65 ? "合格" : "不合格");
-		};
-		System.out.println(f1.test(15));
-		System.out.println(f2.call(66, "Smith"));
+		List<String> names = Arrays.asList("湊雄輔", "朝香あゆみ", "菅原拓真", "大江岳人");
+//		上記Arrays.asListはJava9以前の記述、本来はList.ofで同じ効果
+		names.stream()
+		.filter(n -> n.length() <= 4)
+		.map(n -> n + "さん")
+		.forEach(System.out::println);
 	}
 
 }
