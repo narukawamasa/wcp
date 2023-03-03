@@ -1,6 +1,7 @@
 package main_2;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class Bank {
 	String name;
@@ -9,6 +10,10 @@ public class Bank {
 	public boolean equals(Object o) {
 		return EqualsBuilder.reflectionEquals(this, o);
 		
+	}
+	
+	public int hashCode() {
+		return HashCodeBuilder.reflectionHashCode(this);
 	}
 
 }
