@@ -1,6 +1,20 @@
 package main_2;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class Hero {
+	public Hero loadHeroFromFile() throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader("rpgsave.dat"));
+		
+		String name = br.readLine();
+		String hp = br.readLine();
+		String mp = br.readLine();
+		br.close();
+		return new Hero(name,Integer.parseInt(hp), Integer.parseInt(mp));
+	}
+	
 	String name;
 	int hp;
 	
