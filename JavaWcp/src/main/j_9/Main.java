@@ -7,7 +7,7 @@ public class Main {
 		s.damage = 10;
 		Hero h1 = new Hero("ミナト");
 		h1.sword = s;
-		Hero h2 = new Hero("ミナト");
+		Hero h2 = new Hero();
 		h2.sword = s;
 		Wizard w = new Wizard();
 		w.name = "スガワラ";
@@ -16,7 +16,8 @@ public class Main {
 		w.heal(h2);
 		w.heal(h2);
 		System.out.println("現在の武器は" + h1.sword.name);
-		System.out.println(h2.hp);
+		System.out.println(h2.name);
+		
 	}
 
 }
