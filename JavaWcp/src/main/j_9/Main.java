@@ -1,17 +1,15 @@
 package main.j_9;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Sword s = new Sword();
 		s.name = "炎の剣";
 		s.damage = 10;
 		Hero h1 = new Hero();
 		h1.name = "ミナト";
-		h1.hp = 100;
 		h1.sword = s;
 		Hero h2 = new Hero();
 		h2.name = "アサカ";
-		h2.hp = 100;
 		h2.sword = s;
 		Wizard w = new Wizard();
 		w.name = "スガワラ";
@@ -20,6 +18,7 @@ public class Main {
 		w.heal(h2);
 		w.heal(h2);
 		System.out.println("現在の武器は" + h1.sword.name);
+		System.out.println(h2.hp);
 	}
 
 }
