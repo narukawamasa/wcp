@@ -3,6 +3,12 @@ package main.j_9;
 public class Hero {
 	String name;
 	int hp;
+	Sword seord;
+	
+	public void attack() {
+		System.out.println(this.name + "は攻撃した！");
+		System.out.println("敵に５ポイントのダメージをあたえた！");
+	}
 	
 	public void sleep() {
 		this.hp = 100;
