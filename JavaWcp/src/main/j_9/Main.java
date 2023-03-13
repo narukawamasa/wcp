@@ -2,9 +2,14 @@ package main.j_9;
 
 public class Main {
 	public static void main(String[] args) {
-		Hero h;
-		h = new Hero();
-		h.hp = 100;
+		Hero h1;
+		h1 = new Hero();
+		h1.hp = 100;
+		
+		Hero h2;
+		h2 = new Hero();
+		h2.hp = 200;
+		System.out.println(h1.hp);
 	}
 
 }
