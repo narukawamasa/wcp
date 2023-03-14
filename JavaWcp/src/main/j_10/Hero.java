@@ -9,6 +9,9 @@ public class Hero {
 		m.hp -= 5;
 		System.out.println("5ポイントのダメージをあたえた！");
 	}
+	public Hero() {
+		System.out.println("Heroのコンストラクタが動作");
+	}
 	
 	public final void slip() {
 		this.hp -= 5;

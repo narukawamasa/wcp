@@ -8,6 +8,10 @@ public class SuperHero extends Hero {
 		System.out.println("飛び上がった！");
 	}
 	
+	public SuperHero() {
+		System.out.println("SuperHeroのコンストラクタが動作");
+	}
+	
 	public void land() {
 		this.flying = false;
 		System.out.println("着地した！");
