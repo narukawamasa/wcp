@@ -8,7 +8,12 @@ public class Hero {
 		System.out.println(this.name + "の攻撃");
 		m.hp -= 5;
 		System.out.println("5ポイントのダメージをあたえた！");
-		
+	}
+	
+	public final void slip() {
+		this.hp -= 5;
+		System.out.println(this.name + "は転んだ！");
+		System.out.println("5のダメージ！");
 	}
 	
 	public void run() {
