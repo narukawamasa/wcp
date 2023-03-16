@@ -22,5 +22,10 @@ public class Hero extends Character {
 	public void run() {
 		System.out.println(this.name + "は逃げ出した！");
 	}
+	public void attack(Goblin g) {
+		System.out.println(this.name + "の攻撃");
+		g.hp -= 10;
+		System.out.println("10ポイントのダメージをあたえた！");
+	}
 
 }
