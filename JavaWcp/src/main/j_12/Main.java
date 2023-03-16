@@ -2,15 +2,12 @@ package main.j_12;
 
 public class Main {
 	public static void main(String[] args) {
-		Character[] c = new Character[5];
-		c[0] = new Hero();
-		c[1] = new Hero();
-		c[2] = new Thief("a");
-		c[3] = new Wizard();
-		c[4] = new Wizard();
-		
-		for (Character ch : c) {
-			ch.hp += 50;
+		Monster[] monsters = new Monster[3];
+		monster[0] = new Slime();
+		monster[1] = new Goblin();
+		monster[2] = new DeathBat();
+		for (Monster m : monsters) {
+			m.run();
 		}
 	}
 
