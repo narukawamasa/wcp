@@ -1,6 +1,6 @@
 package main.j_12;
 
-public class Thief {
+public class Thief extends Character {
 	String name;
 	int hp;
 	int mp;
@@ -15,6 +15,11 @@ public class Thief {
 	}
 	public Thief(String name) {
 		this(name, 40);
+	}
+	public void attack(Matango m) {
+		System.out.println(this.name + "の攻撃！");
+		System.out.println("敵に3ポイントのダメージ");
+		m.hp -= 3;
 	}
 
 }
