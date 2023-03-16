@@ -4,7 +4,7 @@ public class Hero extends Character {
 	String name = "ミナト";
 	int hp = 100;
 	
-	public void attack(Matango m) {
+	public void attack(Monster m) {
 		System.out.println(this.name + "の攻撃");
 		m.hp -= 10;
 		System.out.println("10ポイントのダメージをあたえた！");
@@ -22,10 +22,6 @@ public class Hero extends Character {
 	public void run() {
 		System.out.println(this.name + "は逃げ出した！");
 	}
-	public void attack(Goblin g) {
-		System.out.println(this.name + "の攻撃");
-		g.hp -= 10;
-		System.out.println("10ポイントのダメージをあたえた！");
-	}
+	
 
 }
