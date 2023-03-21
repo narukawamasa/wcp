@@ -29,6 +29,9 @@ public class Hero {
 			this.die();
 		}
 	}
+	public String getName() {
+		return this.name;
+	}
 	
 	
 
