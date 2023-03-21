@@ -4,7 +4,7 @@ import main.j_9.Sword;
 
 public class Hero {
 	private int hp;
-	String name;
+	private String name;
 	Sword sword;
 	
 	public void bye() {
@@ -31,6 +31,10 @@ public class Hero {
 	}
 	public String getName() {
 		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	
