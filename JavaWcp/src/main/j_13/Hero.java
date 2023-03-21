@@ -15,7 +15,7 @@ public class Hero {
 		System.out.println(this.name + "は死んでしまった！");
 		System.out.println("GAMEOVERです");
 	}
-	public void sleep() {
+	void sleep() {
 		this.hp = 100;
 		System.out.println(this.name + "は眠って回復した");
 	}
