@@ -3,7 +3,7 @@ package main.j_13;
 import main.j_9.Sword;
 
 public class Hero {
-	int hp;
+	private int hp;
 	String name;
 	Sword sword;
 	
