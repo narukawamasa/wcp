@@ -8,6 +8,7 @@ public class Main {
 		Hero h2 = new Hero();
 		h2.name = "ミナト";
 		h2.hp = 100;
+		System.out.println(Hero.money);
 		if (h1.equals(h2) == true) {
 			System.out.println("同じ内容です。");
 		} else {
