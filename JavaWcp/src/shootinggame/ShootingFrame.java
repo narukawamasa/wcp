@@ -1,5 +1,8 @@
 package shootinggame;
 
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
 import javax.swing.JFrame;
 
 public class ShootingFrame extends JFrame {
@@ -10,6 +13,14 @@ public class ShootingFrame extends JFrame {
 		panel = new ShootingPanel();
 		
 		this.add(panel);
+		
+		this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosed(WindowEvent e) {
+                super.windowClosed(e);
+                Shooting.loop = true;
+            }
+        });
 		
 		//ウインドウの✕を押した時の設定
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
